@@ -9,6 +9,33 @@
     </head>
     <body>
 
+
+        <button id="installButton" style="display: none;">Установить приложение</button>
         <script src="https://isikdev.github.io/cheapmedia-pwa/generate-sw.js"></script>
+        <script>
+        window.addEventListener('beforeinstallprompt', function(event) {
+// Предотвращаем отображение стандартного браузерного всплывающего окна
+event.preventDefault();
+// Сохраняем событие для последующего использования
+deferredPrompt = event;
+// Показываем кнопку установки
+var installButton = document.getElementById('installButton');
+installButton.style.display = 'block';
+
+// Обработчик события клика по кнопке установки
+installButton.addEventListener('click', function() {
+  // Показываем стандартное браузерное всплывающее окно для установки PWA
+  deferredPrompt.prompt();
+  // Ожидаем завершения пользовательского взаимодействия с окном
+  deferredPrompt.userChoice.then(function(choiceResult) {
+    // Сбрасываем событие
+    deferredPrompt = null;
+    // Скрываем кнопку установки
+    installButton.style.display = 'none';
+  });
+});
+});
+
+        </script>
     </body>
 </html>
