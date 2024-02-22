@@ -4,35 +4,34 @@
     "display": "standalone",
     "scope": "/",
     "start_url": "https://cmdigital.ru/",
-    "name": "Маркетинговое агентство полного цикла в Тюмени Cheapmedia",
-    "short_name": "CheapMedia",
-    "description": "Создаем и продвигаем сайты, приводим горячих клиентов",
+    "name": "Cheapmedia",
+    "short_name": "Cheapmedia",
     "icons": [
         {
-            "src": "https://isikdev.github.io/cheapmedia-pwa/icon-144x144.png",
+            "src": "/icon-144x144.png",
             "sizes": "144x144",
             "type": "image/png"
         },
         {
-            "src": "https://isikdev.github.io/cheapmedia-pwa/icon-192x192.png",
+            "src": "/icon-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "https://isikdev.github.io/cheapmedia-pwa/icon-256x256.png",
+            "src": "/icon-256x256.png",
             "sizes": "256x256",
             "type": "image/png"
         },
         {
-            "src": "https://isikdev.github.io/cheapmedia-pwa/icon-384x384.png",
+            "src": "/icon-384x384.png",
             "sizes": "384x384",
             "type": "image/png"
         },
         {
-            "src": "https://isikdev.github.io/cheapmedia-pwa/icon-512x512.png",
+            "src": "/icon-512x512.png",
             "sizes": "512x512",
             "type": "image/png",
-            "purpose": "maskable"
+            "purprose": "maskable"
         }
     ]
 }
