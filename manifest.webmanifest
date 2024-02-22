@@ -3,7 +3,7 @@
     "background_color": "#fff",
     "display": "standalone",
     "scope": "/",
-    "start_url": "https://cmdigital.ru/",
+    "start_url": "https://isikdev.github.io/cheapmedia-pwa/",
     "name": "Cheapmedia",
     "short_name": "Cheapmedia",
     "icons": [
